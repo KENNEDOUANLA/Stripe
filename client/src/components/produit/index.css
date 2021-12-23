@@ -1,0 +1,28 @@
+.produit{
+    height: 150px;
+    display: flex;
+    margin: 10px 25px;
+    border: 2px solid rgb(235, 252, 252);
+    border-radius: 5px;
+}
+.nom-prix{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.description{
+    font-size: x-small;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+
+.panier{
+    margin-left: auto;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    color: skyblue;
+}
