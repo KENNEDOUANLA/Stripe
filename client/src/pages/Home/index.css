@@ -1,0 +1,12 @@
+
+.contenue{
+    margin: 0px 15px;
+    border: 1px solid rgb(100, 143, 160);
+    height: 100vh;
+    border-radius: 5px;
+}
+.all-produit{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}

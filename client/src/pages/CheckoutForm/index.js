@@ -1,19 +1,21 @@
 import React from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import { PaymentForm } from "../../components";
-import { useNavigate } from 'react-router-dom';
-import { useLocation } from "react-router";
-const CheckoutForm=(props)=>{
-    const navigate=useNavigate(); 
-    let data = useLocation();
-    const CLE_PUBLIC="pk_test_51K7iegDc748qEiqn8Fs3LYnvX5DzecYCXQlIpeD3shVVFf4IWAsZsMTR8nKNy2kthkROAWaLLRjYv9L5G5JD8YVL002cyjrSrc"
-    const stripePromise=loadStripe(CLE_PUBLIC);
-    
-    return(
-        <Elements stripe={stripePromise}>
-            <PaymentForm navigate={navigate} montant={data.state}/>
-        </Elements>
+import { Home } from "..";
+
+
+
+const CheckoutForm = () =>
+{
+
+    console.log(process.env.REACT_APP_CLE_PUBLIC);
+    const stripePromise = loadStripe(process.env.REACT_APP_CLE_PUBLIC);
+    return (
+        <div>
+            <Elements stripe={stripePromise}>
+                <Home />
+            </Elements>
+        </div>
     );
 }
 export default CheckoutForm;

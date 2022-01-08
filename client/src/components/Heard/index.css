@@ -1,0 +1,30 @@
+.header{
+    height: 60px;
+    border-bottom: 1px solid skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    padding: 5px;
+    min-width: 80px;
+    border: 2px solid rgb(35, 126, 161);
+    border-radius: 5px;
+    color: rgb(35, 126, 161);
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+}
+.blockGauche{
+    margin-left: 20px;
+}
+.clockDroit{
+    margin-right: 20px;
+}
+.yes{
+    color: rgba(13, 155, 13, 0.897);
+    border-color: rgb(27, 190, 27);
+}
+.payer-button{
+    margin-left: 25px;
+}
